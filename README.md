@@ -1,8 +1,8 @@
-# Project Overview
+# Project Awesome Overview
 
 ## Project Name
 
-The name of your project.
+Project Awesome
 
 ## Project Description
 
@@ -10,7 +10,12 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+Exp:     
+Site:	  Url:
+
+...json
+//Snippet here
+...
 
 ## Wireframes
 
@@ -62,14 +67,17 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Total | H | 40hrs| 0hrs | 0hrs |
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
 
-```
+```js
 function reverse(string) {
 	// here is the code to reverse a string of text
 }
