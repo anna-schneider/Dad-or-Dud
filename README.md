@@ -21,7 +21,7 @@ Site: icanhazdadjoke	  Url:https://icanhazdadjoke.com/
 
 ## Wireframes
 
-https://res.cloudinary.com/dqlrz1dko/raw/upload/v1594661081/DoD%20States/Dad_or_Dud_WF_oiavqc.drawio
+https://res.cloudinary.com/dqlrz1dko/image/upload/v1594661963/DoD%20States/Dad_or_Dud_WF_qazvua.png
 
 #### MVP 
 - Source/use external API; render to screen
