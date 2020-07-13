@@ -25,14 +25,13 @@ https://res.cloudinary.com/dqlrz1dko/image/upload/v1594661963/DoD%20States/Dad_o
 
 #### MVP 
 - Source/use external API; render to screen
-- Create buttons for voting, and to return from the results (state 2), back to the home page (state 1)
+- Create buttons for voting, and to return from the results (view 2), back to the home page (view 1)
 - Increment counter of positive responses
-- Hide page elements in state 2; render results of user choices
+- Hide page elements in view 2; render results of user choices
 - CSS responsive breakpoint for 2 sizes
 
 #### PostMVP  
-- Share button
-- Create database to store results
+- Create local results storage
 - CSS animation
 - Error handling
 
@@ -71,7 +70,6 @@ https://res.cloudinary.com/dqlrz1dko/image/upload/v1594660718/Dad_or_Dud_Priorit
 | Create database | H | 3hrs| 0hrs | 0hrs |
 | CSS animation| H | 3hrs| 0hrs | 0hrs |
 | Error Handling | H | 3hrs| 0hrs | 0hrs |
-
 | Total | H | 30.25hrs| 0hrs | 0hrs |
 
 ## Code Snippet
