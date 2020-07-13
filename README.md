@@ -21,7 +21,7 @@ Site: icanhazdadjoke	  Url:https://icanhazdadjoke.com/
 
 ## Wireframes
 
-https://drive.google.com/file/d/1wsf4dftIbgh6U_25DfW300qrTZ-0FM9L/view?usp=sharing
+https://res.cloudinary.com/dqlrz1dko/raw/upload/v1594661081/DoD%20States/Dad_or_Dud_WF_oiavqc.drawio
 
 #### MVP 
 - Source/use external API; render to screen
@@ -50,7 +50,7 @@ https://drive.google.com/file/d/1wsf4dftIbgh6U_25DfW300qrTZ-0FM9L/view?usp=shari
 
 ## Priority Matrix
 
-https://drive.google.com/file/d/1gZ6pakG3loIRF1Pkfju9GJ-qMnBaYXxi/view?usp=sharing
+https://res.cloudinary.com/dqlrz1dko/image/upload/v1594660718/Dad_or_Dud_Priority_jgz0sm.jpg
 
 ## Timeframes
 
