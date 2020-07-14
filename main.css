@@ -62,11 +62,6 @@ font-size: 16px;
   border: 3px solid red;
 }
 
-.vote-buttons {
-  padding-bottom: 30px;
-  justify-content: space-between;
-}
-
 #joke-display {
   padding: 100px 0px;
   margin: 16px 30px;

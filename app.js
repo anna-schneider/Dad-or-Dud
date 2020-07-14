@@ -1,4 +1,6 @@
 let jokes //Empty Global variable
+let jokeIndex = 0//Global @ 0 index
+let counter = 0
 const getJoke = async () => {
   const url = 'https://icanhazdadjoke.com/'
   try {
@@ -32,6 +34,32 @@ getJoke().then((responses) => {
 function displayJokes(arrayOfJokes) {
   console.log(arrayOfJokes)
   jokes = arrayOfJokes //Store array in "jokes" variable
+  renderJoke()
 }
+
+function renderJoke() {
+  // Find the div with joke-display as its ID
+  // Set the innerHTML of that Node to the contents of the jokes variable
+  if (jokeIndex !== jokes.length) {
+    document.querySelector("#joke-display").innerHTML = jokes[jokeIndex]
+  } else {
+    document.querySelector("#joke-display").innerHTML = "GAME OVER MAN!"
+  }
+}
+
+function attachListenerOnButton() {
+  const findButton = document.querySelectorAll(".vote-buttons")
+  for (let i = 0; i < findButton.length; i++) { //Iterate through button array; increment
+    findButton[i].addEventListener('click', (e) => { //Find button in array
+      e.preventDefault()
+      if (e.target.id === "yay-button") { //If yay button clicked, increment counter
+        counter++
+      }
+      jokeIndex++ //Moves forward jokes
+      renderJoke()
+    })
+  }
+}
+attachListenerOnButton()
 
 
