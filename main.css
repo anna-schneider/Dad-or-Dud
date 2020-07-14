@@ -13,22 +13,21 @@ body {
   background-image: url(Background_2.jpg); 
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
 }
 
 header {
-  font-size: 2em;
+  /* font-size: 2em; */
   font-weight: bold;
-  
-  
 }
 
 h1, header {
+  text-align: center;
   padding-top: 10px;
   margin: 0;
-  width: 450px;
+  /* width: 450px; */
   /* border: 3px solid red; */
-  /* background-color: rgb(58, 124, 96); */
+  background-color: rgb(58, 124, 96);
 }
 
 h2 {
@@ -73,7 +72,7 @@ p {
 }
 
 
-button {
+form button {
    border-radius: 0.12em;
    box-sizing: border-box;
    text-decoration: none;
@@ -84,18 +83,14 @@ button {
    transition: all 0.2s;
   }
 
-  button:hover{
+  form button:hover{
    color:#000000;
    background-color:#FFFFFF;
   }
-  @media all and (max-width:30em){
-   button{
-    display:block;
-    margin:0.4em auto;
-   }
-  }
 
-@media screen and (min-width 640px) {
+
+
+@media screen and (max-width 480px) {
   .flex-container {
     display: flex;
   }
