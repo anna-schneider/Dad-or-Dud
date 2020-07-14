@@ -56,21 +56,20 @@ https://res.cloudinary.com/dqlrz1dko/image/upload/v1594660718/Dad_or_Dud_Priorit
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| CSS General Styling | H | 3hrs| 0hrs | 0hrs |
-| State Management| H | 3hrs| 0hrs | 0hrs |
+| CSS General Styling | H | 3hrs| 1.5hrs | 1.5hrs |
+| View Management| H | 3hrs| .25hrs | .25hrs |
 | CSS Button Styling | H | 2.5hrs| 0hrs | 0hrs |
-| HTML | H | .5hrs| 0hrs | 0hrs |
-| Working with API | H | 1.25hrs| 0hrs | 0hrs |
-| Pseudocode | H | 1.5hrs| 0hrs | 0hrs |
+| HTML | H | .5hrs| .3hrs | .3hrs |
+| Working with API | H | 1.25hrs| 1.5hrs | 1.5hrs |
+| Pseudocode | H | 1.5hrs| 1hrs | 1hrs |
 | Write Copy| H | 1hrs| 0hrs | 0hrs |
 | Event Listeners | H | 1.50hrs| 0hrs | 0hrs |
 | CSS Breakpoint | H | 2hrs| 0hrs | 0hrs |
-| Testing | H | 2.5hrs| 0hrs | 0hrs |
-| Share Button | H | 3hrs| 0hrs | 0hrs |
-| Create database | H | 3hrs| 0hrs | 0hrs |
-| CSS animation| H | 3hrs| 0hrs | 0hrs |
+| Testing | H | 2.5hrs| .3hrs | .3hrs |
+| Sound Effects | H | 3hrs| 0hrs | 0hrs |
+| CSS Animation| H | 3hrs| 0hrs | 0hrs |
 | Error Handling | H | 3hrs| 0hrs | 0hrs |
-| Total | H | 30.25hrs| 0hrs | 0hrs |
+| Total | H | 30.25hrs| 4.85hrs | 4.85hrs |
 
 ## Code Snippet
 
