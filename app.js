@@ -25,13 +25,16 @@ const getJoke = async () => {
   }
 }
 
-getJoke().then((responses) => {
-  const arrayOfJokes = []
-  for (let i = 0; i < responses.length; i++) {
-    arrayOfJokes[i] = responses[i].data.joke;
-  }
-  displayJokes(arrayOfJokes);
-});
+function initializeJokes() {
+  getJoke().then((responses) => {
+    const arrayOfJokes = []
+    for (let i = 0; i < responses.length; i++) {
+      arrayOfJokes[i] = responses[i].data.joke;
+    }
+    displayJokes(arrayOfJokes);
+  });
+}
+initializeJokes()
 
 //Array of jokes
 function displayJokes(arrayOfJokes) {
@@ -74,4 +77,17 @@ function attachListenerOnButton() {
 }
 attachListenerOnButton()
 
-
+//Put initializeJokes inside handler for restart; inverse of renderResults
+function attachListenerOnRestartButton() {
+  const findRestartButton = document.querySelector(".return-home")
+  findRestartButton.addEventListener('click', (e) => {
+    e.preventDefault()
+    if (e.target.id === "restart") {
+      document.getElementById("second-view").classList.add("hide")
+      document.getElementById("second-view").classList.remove("show")
+      document.getElementById("first-view").classList.add("show")
+    }
+    initializeJokes()
+  })
+}
+attachListenerOnRestartButton()
