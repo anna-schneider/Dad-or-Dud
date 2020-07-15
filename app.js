@@ -1,7 +1,10 @@
 let jokes //Empty Global variable
-let jokeIndex = 0//Global @ 0 index
-let counter = 0
+let jokeIndex //Global @ 0 index
+let counter
+
 const getJoke = async () => {
+  jokeIndex = 0
+  counter = 0
   const url = 'https://icanhazdadjoke.com/'
   try {
     //Create empty array
@@ -34,16 +37,25 @@ getJoke().then((responses) => {
 function displayJokes(arrayOfJokes) {
   console.log(arrayOfJokes)
   jokes = arrayOfJokes //Store array in "jokes" variable
-  renderJoke()
+  checkView()
 }
 
 function renderJoke() {
+  document.querySelector("#joke-display").innerHTML = jokes[jokeIndex]
+}
+
+function renderResults() {
+  document.getElementById("first-view").classList.add("hide")
+  document.getElementById("second-view").classList.add("show")
+}
+
+function checkView() {
   // Find the div with joke-display as its ID
   // Set the innerHTML of that Node to the contents of the jokes variable
   if (jokeIndex !== jokes.length) {
-    document.querySelector("#joke-display").innerHTML = jokes[jokeIndex]
+    renderJoke()
   } else {
-    document.querySelector("#joke-display").innerHTML = "GAME OVER MAN!"
+    renderResults()
   }
 }
 
@@ -56,7 +68,7 @@ function attachListenerOnButton() {
         counter++
       }
       jokeIndex++ //Moves forward jokes
-      renderJoke()
+      checkView()
     })
   }
 }
