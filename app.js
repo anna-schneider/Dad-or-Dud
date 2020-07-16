@@ -61,12 +61,15 @@ function renderResults() {
   if (counter <= 3) {
     document.getElementById("dad-30").classList.add("show")
     document.getElementById("dad-30").classList.remove("hide")
+    document.querySelector("html").style.backgroundImage = "url(BG_frown_orange.jpg)"
   } else if (counter <= 7) {
     document.getElementById("dad-70").classList.add("show")
     document.getElementById("dad-70").classList.remove("hide")
+    document.querySelector("html").style.backgroundImage = "url(BG_smile-orange.jpg)"
   } else {
     document.getElementById("dad-100").classList.add("show")
     document.getElementById("dad-100").classList.remove("hide")
+    document.querySelector("html").style.backgroundImage = "url(BG_smile-orange.jpg)"
   }
 }
 
@@ -77,6 +80,7 @@ function checkView() {
     renderJoke()
   } else {
     renderResults()
+    attachListenerOnRestartButton()
   }
 }
 
@@ -97,14 +101,15 @@ attachListenerOnButton()
 
 //Put initializeJokes inside handler for restart; inverse of renderResults
 function attachListenerOnRestartButton() {
-  const findRestartButton = document.querySelector(".return-home")
+  const findRestartButton = document.querySelector("#restart")
   findRestartButton.addEventListener('click', (e) => {
     e.preventDefault()
     document.getElementById("second-view").classList.add("hide")
     document.getElementById("second-view").classList.remove("show")
     document.getElementById("first-view").classList.remove("hide")
     document.getElementById("first-view").classList.add("show")
+    document.querySelector("html").style.backgroundImage = "url(BG_bananas2_main.png)"
     initializeJokes()
   })
 }
-attachListenerOnRestartButton()
+
