@@ -1,6 +1,6 @@
-let jokes //Empty Global variable
+let jokes //Empty global variable
 let jokeIndex //Global @ 0 index
-let counter
+let counter//Empty counter variable
 
 const getJoke = async () => {
   jokeIndex = 0
@@ -26,9 +26,9 @@ const getJoke = async () => {
 }
 
 function initializeJokes() {
-  document.getElementById("30-dad").className = "hide";
-  document.getElementById("70-dad").className = "hide";
-  document.getElementById("100-dad").className = "hide";
+  document.getElementById("dad-30").className = "hide";
+  document.getElementById("dad-70").className = "hide";
+  document.getElementById("dad-100").className = "hide";
 
   getJoke().then((responses) => {
     const arrayOfJokes = []
@@ -51,7 +51,7 @@ function renderJoke() {
   document.querySelector("#joke-display").innerHTML = jokes[jokeIndex]
 }
 
-//Sort votes and render results of choices
+//Sort vote choices and render results of choices in second-view
 function renderResults() {
   document.getElementById("first-view").classList.add("hide")
   document.getElementById("first-view").classList.remove("show")
@@ -59,14 +59,14 @@ function renderResults() {
   document.getElementById("second-view").classList.add("show")
 
   if (counter <= 3) {
-    document.getElementById("30-dad").classList.add("show")
-    document.getElementById("30-dad").classList.remove("hide")
+    document.getElementById("dad-30").classList.add("show")
+    document.getElementById("dad-30").classList.remove("hide")
   } else if (counter <= 7) {
-    document.getElementById("70-dad").classList.add("show")
-    document.getElementById("70-dad").classList.remove("hide")
+    document.getElementById("dad-70").classList.add("show")
+    document.getElementById("dad-70").classList.remove("hide")
   } else {
-    document.getElementById("100-dad").classList.add("show")
-    document.getElementById("100-dad").classList.remove("hide")
+    document.getElementById("dad-100").classList.add("show")
+    document.getElementById("dad-100").classList.remove("hide")
   }
 }
 
