@@ -1,6 +1,7 @@
 /* Sky Blue: rgb(102 218 254) 
    Banana Yellow: rgb(255 253 138) 
-   Peel Yellow: rgb(225 255 0)*/
+   Peel Yellow: rgb(225 255 0)
+   Goldenrod: rgb(229 151 0)*/
 
 
 html {
@@ -68,7 +69,7 @@ font-family: 'Bangers', cursive;
 
 .vote-area {
   margin: 16px 30px;
-  border: 3px solid rgb(225 225 0);
+  border: 3px solid rgb(229 151 0);
   padding-bottom: 25px;
 }
 
@@ -130,20 +131,23 @@ form {
 }
 
 form button {
-  border: 0.16em solid #FFFFFF;
+  border: 0.16em solid rgb(229 151 0);
+  border-radius: 10px;
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Bangers', cursive;
   font-weight: 300;
-  color: #FFFFFF;
+  color: black;
   text-align: center;
   transition: all 0.15s;
-  background: black;
+  background: #FFFFFF;
+  height: 50px;
+  width: 75px;
 }
 
   form button:hover{
-  color:#000000;
-  background-color:#FFFFFF;
+  color:#FFFFFF;
+  background-color: black;
   }
 
   .hide {
