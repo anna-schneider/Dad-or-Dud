@@ -18,19 +18,22 @@
 
 
   <div class="content">
-    <header>Dad or Dud</header>
-    <h1>
-      <p id="game-description">Rank Ten Dad Jokes & Receive Your Personal <br>"Dad Score"</p>
-    </h1>
-
+    <div class="transbox">
+      <header>Dad or Dud</header>
+      <h1>
+        <p id="game-description">Rank Ten Dad Jokes & Receive Your Personal <br>"Dad Score"</p>
+      </h1>
+    </div>
     <div id="first-view">
       <p id="joke-display">Joke Display Here</p>
       <div class="vote-area">
         <h2>Judgement Zone</h2>
         <form>
-          <button class="vote-buttons" bouncy id="yay-button" style="animation-delay:0.07s">Dad</button>
+          <div class="bouncy"><button class="vote-buttons" id="yay-button" style="animation-delay:0.07s">Dad</button>
+          </div>
           <span>OR</span>
-          <button class="vote-buttons" bouncy id="nay-button" style="animation-delay:0.07s">Dud</button>
+          <div class="bouncy"><button class="vote-buttons" id="nay-button" style="animation-delay:0.21s">Dud</button>
+          </div>
         </form>
       </div>
     </div>
@@ -38,18 +41,19 @@
     <div class="hide" id="second-view">
       <h2 class="results">Dad Score</h2>
       <div id="30-dad" class="hide">
-        <p>"Dad" Jokes Are Not Your Friend<br>Your humor is high brow, and none of your tea parties are imaginary. Try
+        <p>"Dad" Jokes Are Not Your Friend<br>Your humor is high brow, and none of your tea parties are
+          imaginary.<br>Try
           again if
           you can handle it.</p>
       </div>
       <div id="70-dad" class="hide">
         <p>"Dad" Jokester in Training<br>You may exhibit some "Dad" joke telling traits like taking grilling VERY
           seriously, but
-          you're still working on your dad bod. Try again.</p>
+          you're still working on your dad bod.<br>Try again.</p>
       </div>
       <div id="100-dad" class="hide">
         <p>100% Certified "Dad"<br>YOU PROBABLY WRITE IN ALL CAPS, and you definately rub your belly after meals.
-          Congratulations, you love the finer things in life. Play on.</p>
+          Congratulations, you love the finer things in life.<br>Play on.</p>
       </div>
       <form>
         <button class="return-home" id="restart">Restart</button>
