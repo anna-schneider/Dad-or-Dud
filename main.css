@@ -108,6 +108,7 @@ opacity: 0.7;
 }
 .pulse-button {
   position: relative;
+  margin-top: 10px;
   width: 75px;
   height: 60px;
   border: none;
@@ -134,8 +135,7 @@ opacity: 0.7;
 #joke-display {
   min-height: 100px;
   min-width: 75px;
-  /* text-align: center; */
-  padding: 50px 0px 15px;
+  padding: 50px 10px 15px;
   margin: 16px 30px;
   border: 3px solid rgb(229 151 0);
   font-weight: bolder;
@@ -191,7 +191,6 @@ form button {
     display: block;
   }
 
-
 @media screen 
 and (min-device-width: 1200px) 
 and (max-device-width: 1600px)  {
@@ -209,6 +208,7 @@ and (max-device-width: 1600px)  {
 
   #joke-display {
     font-size: 20px;
+    width: 750px;
   }
 
   .vote-buttons {
@@ -218,5 +218,9 @@ and (max-device-width: 1600px)  {
 
   .footer {
     font-size: 15px;
+  }
+
+  .container {
+    width: 750px;
   }
 }
