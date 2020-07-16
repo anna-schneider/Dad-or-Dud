@@ -20,7 +20,7 @@
   <div class="content">
     <header>Dad or Dud</header>
     <h1>
-      <p id="game-description">Rank Ten Dad Jokes & Receive Your Personal "Dad Score"</p>
+      <p id="game-description">Rank Ten Dad Jokes & Receive Your Personal <br>"Dad Score"</p>
     </h1>
 
     <div id="first-view">
@@ -28,15 +28,24 @@
       <div class="vote-area">
         <h2>Judgement Zone</h2>
         <form>
-          <button class="vote-buttons" id="yay-button">Dad</button>
+          <button class="vote-buttons" bouncy id="yay-button" style="animation-delay:0.07s">Dad</button>
           <span>OR</span>
-          <button class="vote-buttons" id="nay-button">Dud</button>
+          <button class="vote-buttons" bouncy id="nay-button" style="animation-delay:0.07s">Dud</button>
         </form>
       </div>
     </div>
 
     <div class="hide" id="second-view">
-      <h2 class="results">Your Results</h2>
+      <h2 class="results">Dad Score</h2>
+      <div id="30-dad" class="hide">
+        <p>0-30% Certified "Dad"<br>YOU SUCK</p>
+      </div>
+      <div id="70-dad" class="hide">
+        <p>70% Certified "Dad"<br>You probably write in ALL CAPS, and you take grilling VERY seriously</p>
+      </div>
+      <div id="100-dad" class="hide">
+        <p>100% Certified "Dad"<br>You probably write in ALL CAPS, and you take grilling VERY seriously</p>
+      </div>
       <form>
         <button class="return-home" id="restart">Restart</button>
       </form>

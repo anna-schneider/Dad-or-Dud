@@ -26,6 +26,10 @@ const getJoke = async () => {
 }
 
 function initializeJokes() {
+  document.getElementById("30-dad").className = "hide";
+  document.getElementById("70-dad").className = "hide";
+  document.getElementById("100-dad").className = "hide";
+
   getJoke().then((responses) => {
     const arrayOfJokes = []
     for (let i = 0; i < responses.length; i++) {
@@ -47,9 +51,23 @@ function renderJoke() {
   document.querySelector("#joke-display").innerHTML = jokes[jokeIndex]
 }
 
+//Sort votes and render results of choices
 function renderResults() {
   document.getElementById("first-view").classList.add("hide")
+  document.getElementById("first-view").classList.remove("show")
+  document.getElementById("second-view").classList.remove("hide")
   document.getElementById("second-view").classList.add("show")
+
+  if (counter <= 3) {
+    document.getElementById("30-dad").classList.add("show")
+    document.getElementById("30-dad").classList.remove("hide")
+  } else if (counter <= 7) {
+    document.getElementById("70-dad").classList.add("show")
+    document.getElementById("70-dad").classList.remove("hide")
+  } else {
+    document.getElementById("100-dad").classList.add("show")
+    document.getElementById("100-dad").classList.remove("hide")
+  }
 }
 
 function checkView() {
@@ -82,11 +100,10 @@ function attachListenerOnRestartButton() {
   const findRestartButton = document.querySelector(".return-home")
   findRestartButton.addEventListener('click', (e) => {
     e.preventDefault()
-    if (e.target.id === "restart") {
-      document.getElementById("second-view").classList.add("hide")
-      document.getElementById("second-view").classList.remove("show")
-      document.getElementById("first-view").classList.add("show")
-    }
+    document.getElementById("second-view").classList.add("hide")
+    document.getElementById("second-view").classList.remove("show")
+    document.getElementById("first-view").classList.remove("hide")
+    document.getElementById("first-view").classList.add("show")
     initializeJokes()
   })
 }
