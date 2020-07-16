@@ -37,12 +37,13 @@ h1, header {
 h2 {
   padding: 40px 0px;
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
   font-family: 'Bangers', cursive;
 }
 
 h3 {
   font-weight: bold;
+  font-size: 1em;
 }
 
 span {
@@ -107,8 +108,8 @@ opacity: 0.7;
 }
 .pulse-button {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 60px;
   border: none;
   box-shadow: 0 0 0 0 rgba(229, 151, 0, 0.7);
   border-radius: 10%;
@@ -116,10 +117,10 @@ opacity: 0.7;
   background-size:cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -webkit-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 .pulse-button:hover 
 {
@@ -191,12 +192,31 @@ form button {
   }
 
 
-@media screen and (max-width 1250px) {
+@media screen 
+and (min-device-width: 1200px) 
+and (max-device-width: 1600px)  {
   .flex-container {
     display: flex;
   }
-header {
-  font-size: 25px; 
-} /* Doesn't work*/
 
+  header {
+    font-size: 35px; 
+  } 
+
+  #game-description, #judgement-zone, span {
+    font-size: 25px;
+  }
+
+  #joke-display {
+    font-size: 20px;
+  }
+
+  .vote-buttons {
+    height: 75px;
+    width: 90px;
+  }
+
+  .footer {
+    font-size: 15px;
+  }
 }
