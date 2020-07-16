@@ -72,6 +72,13 @@ font-family: 'Bangers', cursive;
   padding-bottom: 25px;
 }
 
+.results-score {
+  border: 3px solid rgb(225 225 0);
+  padding-top: 40px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+}
+
 div.transbox {
 border: 3px solid rgb(225 225 0);
 background-color: rgb(102 218 254); 
@@ -97,8 +104,10 @@ font-weight: bold;
 }
 
 #joke-display {
-  max-height: 202;
-  padding: 60px 0px;
+  min-height: 100px;
+  min-width: 75px;
+  /* text-align: center; */
+  padding: 50px 0px;
   margin: 16px 30px;
   border: 3px solid rgb(225 225 0);
   font-weight: bolder;
@@ -108,6 +117,10 @@ font-weight: bold;
   padding-bottom: 10px;
   font-size: 16px;
   font-family: 'Bangers', cursive;
+}
+
+#judgement-zone {
+  padding-top: 20px;
 }
 
 form {
