@@ -1,6 +1,6 @@
 let jokes //Empty global variable
-let jokeIndex //Global @ 0 index
-let counter//Empty counter variable
+let jokeIndex //Empty global set @ 0 index
+let counter//Empty counter set @ 0
 
 const getJoke = async () => {
   jokeIndex = 0
