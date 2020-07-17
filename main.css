@@ -37,7 +37,7 @@ h1, header {
 }
 
 h2 {
-  padding: 40px 0px;
+  padding-top: 40px;
   margin: 0;
   font-size: 20px;
   font-family: 'Bangers', cursive;
@@ -45,7 +45,11 @@ h2 {
 
 h3 {
   font-weight: bold;
-  font-size: 1em;
+  font-size: 25px;
+}
+
+p {
+  font-size: 19px;
 }
 
 span {
@@ -79,10 +83,10 @@ padding-bottom: 20px;
 }
 
 .results-score {
+  height: 365px;
   border: 3px solid rgb(229 151 0);
   border-radius: 10px;
   padding-top: 0px;
-  padding-bottom: 50px;
   margin-top: 20px;
   background: rgba(255, 255, 255, 0.3);
 }
@@ -140,12 +144,13 @@ background: rgba(255, 255, 255, 0.3);
 @keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
 
 #joke-display {
-  min-height: 100px;
-  min-width: 75px;
+  height: 120px;
+  width: 200px;
   padding: 50px 10px 15px;
   margin: 16px 30px;
   border: 3px solid rgb(229 151 0);
   font-weight: bolder;
+  font-size: 19px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.3);
 }
@@ -209,14 +214,22 @@ and (max-device-width: 1600px)  {
     font-size: 35px; 
   } 
 
+  p {
+    font-size: 33px;
+  }
+
   #game-description, #judgement-zone, span, h2 {
     font-size: 25px;
   }
 
   #joke-display {
-    font-size: 20px;
+    font-size: 25px;
     width: 750px;
     height: 200px;
+  }
+
+  .results{
+    padding: 0px, 10px;
   }
 
   .vote-buttons {
@@ -230,6 +243,8 @@ and (max-device-width: 1600px)  {
 
   .container {
     width: 750px;
+    padding-top: 40px;
+    margin-top: 30px;
   }
 
   .pulse-button {
