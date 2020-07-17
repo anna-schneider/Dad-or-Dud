@@ -56,7 +56,7 @@ https://res.cloudinary.com/dqlrz1dko/image/upload/v1594660718/Dad_or_Dud_Priorit
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| CSS General Styling | H | 3hrs| 7.25hrs | 7.25hrs |
+| CSS General Styling | H | 3hrs| 8hrs | 8hrs |
 | View Management| H | 3hrs| 4hrs | 4hrs |
 | CSS Button Styling | H | 2.5hrs| 3.25hrs | 3.25hrs |
 | HTML | H | .5hrs| 1hrs | 1hrs |
@@ -69,7 +69,7 @@ https://res.cloudinary.com/dqlrz1dko/image/upload/v1594660718/Dad_or_Dud_Priorit
 | Sound Effects | H | 3hrs| 0hrs | 0hrs |
 | CSS Animation| H | 3hrs| 2.75hrs | 2.75hrs |
 | Error Handling | H | 3hrs| 2.75hrs | 2.75hrs |
-| Total | H | 30.25hrs| 30.65hrs | 30.65hrs |
+| Total | H | 30.25hrs| 31.40hrs | 31.40hrs |
 
 ## Code Snippet
 Create a collection of requests, store them in "Promise.all" so that when they are all returned, I can retrieve the jokes from them.
