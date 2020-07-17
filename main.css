@@ -71,7 +71,7 @@ padding-bottom: 20px;
   font-size: 10px;
   position: absolute;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .vote-area {
@@ -79,7 +79,7 @@ padding-bottom: 20px;
   border: 3px solid rgb(229 151 0);
   border-radius: 10px;
   padding-bottom: 25px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .results-score {
@@ -88,12 +88,12 @@ padding-bottom: 20px;
   border-radius: 10px;
   padding-top: 0px;
   margin-top: 20px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 div.transbox {
 border: 3px solid rgb(229 151 0);
-background: rgba(255, 255, 255, 0.3); 
+background: rgba(255, 255, 255, 0.5); 
 }
 
 .bouncy {
@@ -152,7 +152,7 @@ background: rgba(255, 255, 255, 0.3);
   font-weight: bolder;
   font-size: 19px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 #game-description {
@@ -208,11 +208,16 @@ and (min-device-width: 1200px)
 and (max-device-width: 1600px)  {
   .flex-container {
     display: flex;
+    align-items: center;
   }
 
   header {
     font-size: 35px; 
   } 
+
+  h2, h3 {
+    30px;
+  }
 
   p {
     font-size: 33px;
@@ -226,6 +231,7 @@ and (max-device-width: 1600px)  {
     font-size: 25px;
     width: 750px;
     height: 200px;
+    margin-top: 45px;
   }
 
   .results{
@@ -252,4 +258,5 @@ and (max-device-width: 1600px)  {
     width: 90px;
     font-size: 15px;
   }
+
 }
