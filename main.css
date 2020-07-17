@@ -111,6 +111,8 @@ background: rgba(255, 255, 255, 0.3);
   height: 100%;
   margin: 0 auto 0;
 }
+
+/* Inspired by https://gist.github.com/MPieter/f468a286e69fd2578c02*/
 .pulse-button {
   position: relative;
   margin-top: 10px;
