@@ -10,7 +10,7 @@ const getJoke = async () => {
     //Create empty array
     const arrOfRequests = [];
 
-    //Iterate for 10 jokes through Axios
+    //Iterate for 10 jokes through Axios; passed in the header as an object
     for (let i = 0; i < 10; i++) {
       arrOfRequests[i] = axios.get(url, {
         headers: { "Accept": "application/json" }

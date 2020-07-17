@@ -163,6 +163,7 @@ background: rgba(255, 255, 255, 0.5);
 
 #judgement-zone {
   padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .dad-30 {
@@ -216,7 +217,7 @@ and (max-device-width: 1600px)  {
   } 
 
   h2, h3 {
-    30px;
+    font-size: 30px;
   }
 
   p {
