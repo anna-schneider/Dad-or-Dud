@@ -5,259 +5,294 @@
    70's Orange: rgb(255 131 7)
    Orange Light: rgb(255 154 10)*/
 
-
 html {
-  background-image: url(BG_bananas2_main.png);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
+	background-image: url(BG_bananas2_main.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Bubblegum Sans', cursive;
-  font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Bubblegum Sans", cursive;
+	font-size: 25px;
 }
 
 header {
-  font-size: 25px;
-  font-family: 'Bangers', cursive;
+	font-size: 25px;
+	font-family: "Bangers", cursive;
 }
 
-h1, header {
-  text-align: center;
-  padding-top: 10px;
-  margin: 0;
+h1,
+header {
+	text-align: center;
+	padding-top: 10px;
+	margin: 0;
 }
 
 h2 {
-  padding-top: 40px;
-  margin: 0;
-  font-size: 20px;
-  font-family: 'Bangers', cursive;
+	padding-top: 40px;
+	margin: 0;
+	font-size: 20px;
+	font-family: "Bangers", cursive;
 }
 
 h3 {
-  font-weight: bold;
-  font-size: 25px;
+	font-weight: bold;
+	font-size: 25px;
 }
 
 p {
-  font-size: 19px;
+	font-size: 19px;
 }
 
 span {
-font-size: 16px;
-font-family: 'Bangers', cursive;
-padding-bottom: 20px;
+	font-size: 16px;
+	font-family: "Bangers", cursive;
+	padding-bottom: 20px;
 }
 
 .content {
- flex: 1 0 auto; 
- text-align: center;
+	flex: 1 0 auto;
+	text-align: center;
 }
 
 .footer {
-  flex-shrink: 0;
-  padding: 3px 0px;
-  margin-bottom: 10px;
-  border: 3px solid rgb(102 218 254);
-  font-size: 10px;
-  position: absolute;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
+	flex-shrink: 0;
+	padding: 3px 0px;
+	margin-bottom: 10px;
+	border: 3px solid rgb(102 218 254);
+	font-size: 10px;
+	position: absolute;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.5);
 }
 
 .vote-area {
-  margin: 16px 30px;
-  border: 3px solid rgb(229 151 0);
-  border-radius: 10px;
-  padding-bottom: 25px;
-  background: rgba(255, 255, 255, 0.5);
+	margin: 16px 30px;
+	border: 3px solid rgb(229 151 0);
+	border-radius: 10px;
+	padding-bottom: 25px;
+	background: rgba(255, 255, 255, 0.5);
 }
 
 .results-score {
-  height: 365px;
-  border: 3px solid rgb(229 151 0);
-  border-radius: 10px;
-  padding-top: 0px;
-  margin-top: 20px;
-  background: rgba(255, 255, 255, 0.5);
+	height: 365px;
+	border: 3px solid rgb(229 151 0);
+	border-radius: 10px;
+	padding-top: 0px;
+	margin-top: 20px;
+	background: rgba(255, 255, 255, 0.5);
 }
 
 div.transbox {
-border: 3px solid rgb(229 151 0);
-background: rgba(255, 255, 255, 0.5); 
+	border: 3px solid rgb(229 151 0);
+	background: rgba(255, 255, 255, 0.5);
 }
 
 .bouncy {
-  animation: bouncy 5s infinite linear;
-  position: relative; 
+	animation: bouncy 5s infinite linear;
+	position: relative;
 }
 
 @keyframes bouncy {
-0%{top:0em}
-40%{top:0em}
-43%{top:-0.9em}
-46%{top:0em}
-50%{top:0em}
-100%{top:0em;}
+	0% {
+		top: 0em;
+	}
+	40% {
+		top: 0em;
+	}
+	43% {
+		top: -0.9em;
+	}
+	46% {
+		top: 0em;
+	}
+	50% {
+		top: 0em;
+	}
+	100% {
+		top: 0em;
+	}
 }
 
 .container {
-  width: 200px;
-  height: 100%;
-  margin: 0 auto 0;
+	width: 200px;
+	height: 100%;
+	margin: 0 auto 0;
 }
 
 /* Inspired by https://gist.github.com/MPieter/f468a286e69fd2578c02*/
 .pulse-button {
-  position: relative;
-  margin-top: 10px;
-  width: 75px;
-  height: 60px;
-  border: none;
-  box-shadow: 0 0 0 0 rgba(229, 151, 0, 0.7);
-  border-radius: 10%;
-  background-color: rgb(255 154 10);
-  background-size:cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  -webkit-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  -moz-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  -ms-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
-  animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	position: relative;
+	margin-top: 10px;
+	width: 75px;
+	height: 60px;
+	border: none;
+	box-shadow: 0 0 0 0 rgba(229, 151, 0, 0.7);
+	border-radius: 10%;
+	background-color: rgb(255 154 10);
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	-webkit-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	-moz-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	-ms-animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
+	animation: pulse 2.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }
-.pulse-button:hover 
-{
-  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+.pulse-button:hover {
+	-webkit-animation: none;
+	-moz-animation: none;
+	-ms-animation: none;
+	animation: none;
 }
-@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
-@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-webkit-keyframes pulse {
+	to {
+		box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+	}
+}
+@-moz-keyframes pulse {
+	to {
+		box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+	}
+}
+@-ms-keyframes pulse {
+	to {
+		box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+	}
+}
+@keyframes pulse {
+	to {
+		box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+	}
+}
 
 #joke-display {
-  height: 120px;
-  width: 200px;
-  padding: 50px 10px 15px;
-  margin: 16px 30px;
-  border: 3px solid rgb(229 151 0);
-  font-weight: bolder;
-  font-size: 19px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.5);
+	height: 120px;
+	width: 200px;
+	padding: 50px 10px 15px;
+	margin: 16px 30px;
+	border: 3px solid rgb(229 151 0);
+	font-weight: bolder;
+	font-size: 19px;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.5);
 }
 
 #game-description {
-  padding-bottom: 10px;
-  font-size: 16px;
-  font-family: 'Bangers', cursive;
+	padding-bottom: 10px;
+	font-size: 16px;
+	font-family: "Bangers", cursive;
 }
 
 #judgement-zone {
-  padding-top: 20px;
-  padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
 .dad-30 {
-background-image: url(BG_frown_orange.jpg);
+	background-image: url(BG_frown_orange.jpg);
 }
 
 form {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
 }
 
 form button {
-  border: 0.16em solid rgb(229 151 0);
-  border-radius: 10px;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Bangers', cursive;
-  font-weight: 300;
-  color: black;
-  text-align: center;
-  transition: all 0.15s;
-  background: #FFFFFF;
-  height: 50px;
-  width: 75px;
+	border: 0.16em solid rgb(229 151 0);
+	border-radius: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Bangers", cursive;
+	font-weight: 300;
+	color: black;
+	text-align: center;
+	transition: all 0.15s;
+	background: #ffffff;
+	height: 50px;
+	width: 75px;
 }
 
-  form button:hover{
-  color:#FFFFFF;
-  background-color: black;
-  }
+form button:hover {
+	color: #ffffff;
+	background-color: black;
+}
 
-  .hide {
-    display: none;
-  }
+.hide {
+	display: none;
+}
 
-  .show {
-    display: block;
-  }
+.show {
+	display: block;
+}
 
-@media screen 
-and (min-device-width: 1200px) 
-and (max-device-width: 1600px)  {
-  .flex-container {
-    display: flex;
-    align-items: center;
-  }
+@media screen and (min-device-width: 1200px) {
+	.flex-container {
+		display: flex;
+		align-items: center;
+	}
 
-  header {
-    font-size: 35px; 
-  } 
+	header {
+		font-size: 55px;
+	}
 
-  h2, h3 {
-    font-size: 30px;
-  }
+	h2,
+	h3,
+	p {
+		font-size: 40px;
+	}
 
-  p {
-    font-size: 33px;
-  }
+	#game-description,
+	#judgement-zone,
+	#joke-display,
+	span,
+	h2 {
+		font-size: 45px;
+	}
 
-  #game-description, #judgement-zone, span, h2 {
-    font-size: 25px;
-  }
+	#joke-display {
+		width: 750px;
+		height: 300px;
+		margin-top: 45px;
+	}
 
-  #joke-display {
-    font-size: 25px;
-    width: 750px;
-    height: 200px;
-    margin-top: 45px;
-  }
+	.results {
+		padding: 0px, 10px;
+	}
 
-  .results{
-    padding: 0px, 10px;
-  }
+	.vote-buttons {
+		height: 150px;
+		width: 170px;
+		font-size: 20px;
+	}
 
-  .vote-buttons {
-    height: 75px;
-    width: 90px;
-  }
+	.footer {
+		font-size: 15px;
+	}
 
-  .footer {
-    font-size: 15px;
-  }
+	.container {
+		width: 750px;
+		padding-top: 40px;
+		margin-top: 30px;
+	}
 
-  .container {
-    width: 750px;
-    padding-top: 40px;
-    margin-top: 30px;
-  }
+	.pulse-button {
+		height: 150px;
+		width: 180px;
+		font-size: 35px;
+	}
 
-  .pulse-button {
-    height: 75px;
-    width: 90px;
-    font-size: 15px;
-  }
-
+	.results-score {
+		height: 900px;
+		width: 1200px;
+		margin-top: 8px;
+	}
 }
